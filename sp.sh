@@ -1,5 +1,5 @@
 sp() {
-    local SP_VERSION="1.0.0"
+    local SP_VERSION="0.1.0"
     if [ $# -lt 2 ]
     then
         case "$1" in
