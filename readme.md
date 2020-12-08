@@ -47,4 +47,4 @@ TODOs
 ===
 
 - Add support for in-the-middle selection of pane: `sp v20 h50 0 h50` to have a bottom row halved at 20% and a top 80% row halved too
-- maybe rename actual v to h cause I don't think it makes sense as it is now
+- ~~maybe rename actual v to h cause I don't think it makes sense as it is now~~

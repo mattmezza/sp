@@ -33,7 +33,13 @@ EOF
 
     for sp in ${@:1:${#}-1}
     do
-        eval "tmux split-window -${sp:0:1}p ${sp:1:3}"
+        local DIRECTION=${sp:0:1}
+        if [ $DIRECTION = "h" ]; then
+            DIRECTION="v"
+        else
+            DIRECTION="h"
+        fi
+        eval "tmux split-window -${DIRECTION}p ${sp:1:3}"
     done
     eval "tmux select-pane -t$PANESELECT"
 }
